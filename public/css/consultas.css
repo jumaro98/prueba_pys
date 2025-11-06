@@ -1,0 +1,12 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-group-item {
+    cursor: pointer;
+}

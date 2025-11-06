@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 500px;
+  border-radius: 15px;
+}

@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.modal-lg {
+    max-width: 600px;
+}

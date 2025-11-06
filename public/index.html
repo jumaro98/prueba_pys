@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultar viajes por placa</title>
+</head>
+<body>
+  <h2>Consulta de viajes</h2>
+  <input type="text" id="placa" placeholder="Ingrese la placa del carro">
+  <button onclick="consultar()">Buscar</button>
+
+  <pre id="resultado"></pre>
+
+  <script>
+    async function consultar() {
+      const placa = document.getElementById('placa').value.trim();
+      if (!placa) {
+        alert('Ingrese una placa');
+        return;
+      }
+
+      // Llamar al endpoint Slim
+      const res = await fetch(`http://localhost:8080/viajes/${placa}`);
+      const data = await res.json();
+
+      document.getElementById('resultado').textContent = JSON.stringify(data, null, 2);
+    }
+  </script>
+</body>
+</html>
